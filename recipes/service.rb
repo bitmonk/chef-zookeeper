@@ -51,7 +51,7 @@ when 'runit'
     options(
       exec: executable_path
     )
-    action [:enable, :start]
+    action [:enable]
   end
 when 'exhibitor'
   Chef::Log.info('Assuming Exhibitor will start up Zookeeper.')
